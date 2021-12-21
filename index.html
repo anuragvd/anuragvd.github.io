@@ -1,223 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BCA</title>
-</head>
+    <title>Assignment</title>
+  </head>
 
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 
-<body style="background-color:rgb(35, 146, 141);" style="margin:0px;">
+  <body onload="document.registration.userid.focus();" style="border: 2px solid rgb(18, 131, 146)" >
+    
+    <h1 style="color: rgb(145, 95, 145); text-align: center">Assignment 2</h1>
 
-    <table style="width:100%; border-collapse:collapse; font:14px Arial,sans-serif;">
-        <tr>
-            <td colspan="2" style="padding:10px 20px; background-color:#7a5207;">
-                <h1 align="center" style="color:rgb(248, 248, 248);">Department of Computer Science,Integral university</h1>
-            </td>
-        </tr>
-        <tr style="height:170px;">
-            <td style="width:20%; padding:20px; background-color:#115f5f; vertical-align: top;">
-                <ul style="list-style:none; padding:0px; line-height:24px;">
-                    <li><a href="https://www.python.org/" target="_blank" style="color:#333;">Home</a></li>
-                    <br>
-                    <li><a href="https://developer.android.com/studio" target="_blank" style="color:#333;">About</a>
-                    </li>
-                    <br>
-                    <li><a href="https://www.w3schools.com/java/default.asp" target="_blank"
-                            style="color:rgb(7, 7, 7);">Contact</a></li>
-                </ul>
-            </td>
-            <td style="padding:20px; background-color:#b6e7e9; vertical-align:top;">
+    <div id="full">
+    <script>
+      var div = document.getElementById("full");
 
-                <br>
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
 
-                <h1>INTEGRAL UNIVERSITY</h1>
-                <p>
-                    <big>
-                    The foundation stone was laid on 3 November 1993 by Abul Hasan Ali Hasani Nadwi, rector of
-                    Darul-uloom Nadwatul Ulama as Institute of Integral Technology, Lucknow. The main building was
-                    inaugurated by the then governor of Uttar Pradesh Motilal Vora on 14 January 1996. An engineering
-                    college was simultaneously established by the Islamic Council for Productive Education (ICPE) in
-                    1997, which started functioning in 1998 with two courses; Computer Science Engineering, and
-                    Electronics Engineering. Later other courses like Architecture, Information Technology, Mechanical
-                    Engineering, Civil Engineering and Master of Computer Application were added. Atal Bihari Vajpayee,
-                    the then prime minister of India, laid the foundation stone of a residential complex on 30 June
-                    1999. During his speech he expressed his hope that the Institute of Integral Technology, Lucknow
-                    having the abbreviation IIT will maintain the same standard as the other IITs do. The Institute then
-                    affiliated to Uttar Pradesh Technical University.</big> 
-                    <br>
-                </p>
-                <hr>
-                <ul>
-                    <li style="color:rgb(8, 129, 24);"><b>Unix and Shell Programming</b< /li>
-                    <li style="color:rgb(128, 30, 255);"><i>Data Communication</i></li>
-                    <li style="color:DodgerBlue;">Computer Networks</li>
-                    <li style="color:rgb(30, 45, 255);">Data Structure</li>
-                    <li style="color:rgb(255, 158, 30);">Programming in Java</li>
-                    <li style="color:rgb(255, 30, 180);"><strong>Operating System</strong></li>
-                    <li><a href="https://www.python.org/" target="_blank">Python</a></li>
-                    <li><a href="https://www.w3schools.com/java/default.asp" target="_blank">Java</a></li>
-                </ul>
-                <hr>
-                <br>
-                <a href="https://iul.ac.in" target="_blank">
-                    <img src="https://iul.ac.in/img/CentralLibraryCoverImage.jpg" alt="Image"
-                        width="700">
-                </a>
-                <br>
+      function changeColor() {
+        div.style.backgroundColor = getRandomColor();
+      }
 
-                <hr>
-                
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vUZ5YfLqJHg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+      setInterval(changeColor, 1000);
+    </script>
 
-                <br>
+<h2 id="temp"></h2>
+<script>
 
+    
+    let name = prompt("Tell me our Name Please");
+    console.log(name);
 
-                <hr>
-                <table border="1" cellspacing="0" align="center">
+    document.getElementById('temp').innerHTML=` Hello!  ${name} You are Registered Successfully`
 
-                    <tr>
-                        <th colspan="6"> Time Table </th>
-                    </tr>
+</script>
 
-                    <tr>
-                        <td rowspan="6"> Hours </td>
-                        <th> Mon </th>
-                        <th> Tues </th>
-                        <th> Wed </th>
-                        <th> Thrus</th>
-                        <th> Fri </th>
-                    </tr>
+  
+<br>
+    <h3 style="background-color: rgb(242, 210, 243)">
+      <p style="text-align: center">
+        <b>SKD Academy,</b>  is a private school
+        that offers education up to the intermediate level, in Lucknow, India.
+        It is a co-educational, English Medium institution affiliated to
+        <big 5 style="color: rgb(80, 44, 44)">ICSE Board,</big> New Delhi. The streams
+        offered are Science, Commerce and Arts.[1] The school has been ranked
+        6th in the "most respected secondary schools" in India list compiled by
+        IMRB in 2007.School has strength of 8397students with Pre-Primary as
+        1120, Primary as 3398, Junior as 1941 and Senior 1938.
+      </p>
+    </h3>
+    <h3 style="background-color: rgb(148, 158, 161)">
+      <p style="text-align: center">
+        <i>Integral University</i> is situated in <u>Lucknow</u>, a city known
+        for its culture, etiquette, monuments and role in the freedom struggle.
+        Lucknow is the capital city of the largest state of India, and has a
+        population of about 4.6 million. Lucknow is the capital city of Uttar
+        Pradesh and it has always been a mulcultural city. Integral University
+        has a unique culture of inclusiveness, diversity, personal and
+        intellectual integrity and value-based education.
+      </p>
+    </h3>
 
-                    <tr>
-                        <td> CA101 </td>
-                        <td> CA102</td>
-                        <td> CA103</td>
-                        <td> CA104 </td>
-                        <td> CA105</td>
-                    </tr>
+    <h3>
+      <p style="text-align: center">
+        The curriculum has a strong focus on individual growth and the
+        development of essential tools so that its students make a mark in the
+        corporate world and the ﬁeld of technology. These are solidly supported
+        by a highly qualiﬁed and trained team of accomplished faculty and robust
+        academic infrastructure. It was established under the Act Number 9 of
+        2004 by the State Government. The University is duly approved by the
+        University Grants Commission (UGC) under section 2(f) and 12B of the UGC
+        Act, 1956, Medical Council of India, Pharmacy Council of India, Indian
+        Nursing Council, Council of Architecture, Bar Council of India, Indian
+        Association of Physiotherapists, National Council for Teacher Education,
+        UP State Medical Faculty and Distance Education Bureau. The University
+        maintains a decent and decorous atmosphere in the campus. The campus is
+        highly disciplined and ragging-free, with all modern amenities for
+        pursuit of higher education and sports. The campus provides state-off
+        the-art hostel accommodation, with the capacity to host 2600 students in
+        the hostels, and houses a 550-bedded hospital, as part of the Medical
+        College, with state-of-the-art medical facilities and more than 200
+        doctors. Integral University is not only an academic institution but
+        also a mission and a vision to make the country progressive and
+        prosperous in all walks of life.
+      </p>
+    </h3>
 
-                    <tr>
-                        <td> CA101 </td>
-                        <td> CA102</td>
-                        <td> CA103</td>
-                        <td> CA104 </td>
-                        <td> CA105</td>
-                    </tr>
+    <hr />
 
-                    <tr>
-                        <th colspan="5"> Lunch </th>
-                    </tr>
+    
+      
+    <h1 style="color: rgb(10, 9, 10); text-align: center" ;>
+      Form Validation
+    </h1>
 
-                    <tr>
-                        <td> CA101 </td>
-                        <td> CA102</td>
-                        <td> CA103</td>
-                        <td> CA104 </td>
-                        <td rowspan="2"> Project </td>
-                    </tr>
+    <div  align="center">
+      <form name="registration" onSubmit="return formValidation();">
+        <label for="userid">User id:</label>
+        <input type="text" name="userid" size="12" />
+        <br /><br />
+        <label for="passid">Password:</label>
+        <input type="password" name="passid" size="12" />
+        <br /><br />
+        <label for="username">Name:</label>
+        <input type="text" name="username" size="50" />
+        <br /><br />
+        <label for="address">Address:</label>
+        <input type="text" name="address" size="50" />
+        <br /><br />
+        <label for="country">Country:</label>
+        <select name="country">
+          <option selected="" value="Default">(Please Select a Country)</option>
+          <option value="AF">Australia</option>
+          <option value="AL">Canada</option>
+          <option value="DZ">India</option>
+          <option value="AS">Russia</option>
+          <option value="AD">USA</option>
+        </select>
+        <br /><br />
+        <label for="zip">ZIP Code:</label>
+        <input type="text" name="zip" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="text" name="email" size="50" />
+        <br /><br />
+        <label id="gender">Sex:</label>
+        <input type="radio" name="msex" value="Male" /><span>Male</span>
+        <input type="radio" name="fsex" value="Female" /><span>Female</span>
+        <br /><br />
+        <label>Language:</label>
+        <input type="checkbox" name="en" value="en" checked /><span
+          >English</span
+        >
+        <input type="checkbox" name="nonen" value="noen" /><span
+          >Non English</span
+        >
+        <br /><br />
+        <label for="desc">About:</label>
+        <textarea name="desc" id="desc"></textarea>
+        <br />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Submit"
+          style="background: rgb(71, 166, 230); color: black"
+        />
+        <br /><br />
+      </form>
+    </div>
+</div>
 
-                    <tr>
-                        <td> CA101 </td>
-                        <td> CA102</td>
-                        <td> CA103</td>
-                        <td> CA104 </td>
-                    </tr>
-                </table>
+    <div class="container">
+      <div class="sec">
+        <p id="ads">Click below button to change text into bold</p>
 
-                <hr>
+        <button
+          type="button"
+          onclick="document.getElementById('ads').innerHTML='<b>Click below button to change text into bold</b>'"
+          class="btn"
+        >
+          Click to bold
+        </button>
 
+        <button
+          type="button"
+          onclick="document.getElementById('ads').innerHTML='Click below button to change text into bold'"
+          class="btn"
+        >
+          Click to Reset
+        </button>
+      </div>
 
-                <center>
-                    Integral University Lucknow <br />
+      <div class="sec">
+        <p id="itelic">Click below button to change text into italic</p>
 
-                    <table border="1" cellpadding="5" width="80%">
-                        <tr align="center">
-                            <th>S.No</th>
-                            <th>Infrastructure</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr align="center">
-                            <th>1.</th>
-                            <th>CLASSROOMS & LABORATORIES</th>
-                            <ul>
-                                <td>
-                                    <li>Smart Classroom <br /></li>
-                                    <li>State of the Laboratories<br /></li>
-                                    <li>Wi-Fi Facilities</li>
-                                </td>
-                            </ul>
-                        </tr>
+        <button
+          type="button"
+          onclick="document.getElementById('itelic').innerHTML='<i>Click below button to change text into bold</i>'"
+          class="btn"
+        >
+          Click to italic
+        </button>
 
-                        <tr align="center">
-                            <th>2.</th>
-                            <th>RESIDENTIAL FACILITIES</th>
-                            <ul>
-                                <td>
-                                    <li>SEPERATE GIRLS & BOYS HOSTELS <br /></li>
-                                </td>
-                            </ul>
-                        </tr>
+        <button
+          type="button"
+          onclick="document.getElementById('itelic').innerHTML='Click below button to change text into bold'"
+          class="btn"
+        >
+          Click to Reset
+        </button>
+      </div>
 
-                        <tr align="center">
-                            <th>3.</th>
-                            <th>CENTRAL AUDITORIUM</th>
-                            <ul>
-                                <td>
-                                    <li>STATE OF THE ART AUDITORIUMS<br /></li>
-                                </td>
-                            </ul>
-                        </tr>
+      <div class="sec">
+        <p id="underline">Click below button to change text with underline</p>
 
-                        <tr align="center">
-                            <th>4.</th>
-                            <th>LIBRARIES</th>
-                            <ul>
-                                <td>
-                                    <li>24X7 - ASK A LIBRARIAN SERVICE<br /></li>
-                                    <li>READING ROOM FOR FACULTY & RESEARCHERS<br /></li>
-                                    <li>COMPUTERIZED LIBRARY SERVICES</li>
-                                </td>
-                            </ul>
-                        </tr>
-                    </table>
-                </center>
+        <button
+          type="button"
+          onclick="document.getElementById('underline').innerHTML='<u>Click below button to change text into bold</u>'"
+          class="btn"
+        >
+          Click to Underline
+        </button>
 
-                <hr>
+        <button
+          type="button"
+          onclick="document.getElementById('underline').innerHTML='Click below button to change text into bold'"
+          class="btn"
+        >
+          Click to Reset
+        </button>
+      </div>
+    </div>
 
-                <br>
+    <div class="btn" align="center">
+        
+        
+    <a href="https://www.iul.ac.in" target="_blank">Next page</a>
+    
+    </div>
 
-                <br>
-
-                <audio controls="controls" align="center">
-                    <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
-                        type="audio/mpeg">
-                    Your browser does not support the HTML5 Audio Element.
-                </audio>
-                <br>
-
-
-                <br>
-
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="padding:5px; background-color:#acb3b9; text-align:center;">
-               
-                <h3><a href="#top">Back to top of page</a></h3>
-            </td>
-        </tr>
-    </table>
-
-
-    <br>
-
-
-</body>
-
+  </body>
 </html>
